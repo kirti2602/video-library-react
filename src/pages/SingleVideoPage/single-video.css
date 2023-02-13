@@ -1,0 +1,47 @@
+.single-video-btns {
+  display: flex;
+  flex-direction: row;
+}
+
+.single-video-btns > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--video-secondary-light);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.single-video-btns .single-video-action:hover {
+  background-color: var(--video-secondary-color);
+  transition: 300ms ease;
+  cursor: pointer;
+}
+
+.single-video-desc {
+  font-size: 1.2rem;
+  padding-right: 1.5rem;
+}
+
+.single-video-title {
+  font-family: "Montserrat", sans-serif;
+  padding-right: 1rem;
+}
+
+.single-video-player {
+  width: 80vw;
+  height: 70vh;
+}
+
+@media screen and (max-width: 1000px) {
+  .single-video-player {
+    width: 90vw;
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .single-video-player {
+    height: 50vh;
+  }
+}

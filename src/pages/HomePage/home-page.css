@@ -1,0 +1,36 @@
+.categories-container.mt-7 .h3.my-2 {
+    margin: auto;
+}
+
+.home-heading {
+    font-size: 50px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.landing-container {
+    margin-top: 3.5rem
+}
+
+.App.dark .video-home-grid {
+    background-color: var(--gray-txt);
+}
+
+.App.light .video-home-grid {
+    background-color: var(--video-light-grey);
+}
+
+.grid-col-3 {
+    padding: 5rem;
+    text-align: center;
+}
+
+.grid-col-3 .grid-col-item {
+    margin: 0 2rem;
+    padding: 0 2rem;
+}
+
+.grid-col-3 .grid-col-item p.txt-normal.my-3 {
+    font-weight: 300;
+    line-height: 1.5;
+}

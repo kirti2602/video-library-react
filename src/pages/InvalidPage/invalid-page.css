@@ -1,0 +1,21 @@
+.image-404-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem;
+    gap: 2rem;
+    margin: 5rem 0;
+}
+
+.error-404-img {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.alert.alert-container.alert-error {
+    font-size: 1.4rem;
+    text-align: center;
+    width: fit-content;
+    color: var(--theme-light-font);
+}

@@ -1,0 +1,46 @@
+.categories-container p {
+    text-align: center;
+}
+
+.categories-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.App.dark .categories-container .card.card-vertical.ecomm-card {
+    background-color: var(--theme-light-bg);
+}
+
+.App.light .categories-container .card.card-vertical.ecomm-card {
+    background-color: var(--video-secondary-light);
+}
+
+.categories-container .card.card-vertical.ecomm-card {
+    height: 20rem;
+    border-radius: 0.3rem;
+}
+
+.categories-container .card.card-vertical.ecomm-card:hover {
+    box-shadow: none;
+    opacity: 0.6;
+    transition-delay: 1ms;
+}
+
+.App.light .categories-container .card.card-vertical.ecomm-card .ecomm-card-heading {
+    color: var(--theme-light-font);
+}
+
+.categories-container .card.card-vertical.ecomm-card .ecomm-card-heading {
+    margin: var(--size-0-5) 0;
+    font-size: 1.1rem;
+    color: var(--video-cta-color);
+}
+
+
+
+.categories-container .card.card-vertical.ecomm-card .vt-card-img {
+    max-height: 20rem;
+    height: 17rem;
+}

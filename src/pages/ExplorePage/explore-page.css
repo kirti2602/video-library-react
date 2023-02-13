@@ -1,0 +1,112 @@
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  padding: 1rem 2rem;
+  grid-column-gap: var(--size-0-5);
+  grid-row-gap: var(--size-1);
+  margin: auto;
+}
+
+.video-container .alert-container .alert-error {
+  max-width: 30%;
+}
+
+.video-main-content p.alert.alert-container.alert-primary.txt-normal {
+  width: 60%;
+}
+
+.App.dark .video-main-content p.alert.alert-container.alert-primary.txt-normal {
+  background-color: var(--video-secondary-color);
+}
+
+.App.dark div.button.button-primary.btn-outline {
+  color: var(--category-chips);
+  border-color: var(--category-chips);
+  border-radius: 0.5rem;
+}
+
+.App.light div.button.button-primary.btn-outline {
+  color: var(--video-cta-color);
+  border-color: var(--video-cta-color);
+  border-radius: 0.5rem;
+}
+
+.App.light div.button.button-primary.btn-outline.catg-selected {
+  color: var(--white-bg);
+  background-color: var(--video-cta-color);
+  border-color: var(--video-cta-color);
+  border-radius: 0.5rem;
+}
+
+.App.dark div.button.button-primary.btn-outline.catg-selected {
+  color: var(--font-color);
+  background-color: var(--category-chips);
+  border-color: var(--category-chips);
+  border-radius: 0.5rem;
+}
+
+.App.dark div.button.button-primary.btn-outline.reset-catg,
+.App.light div.button.button-primary.btn-outline.reset-catg {
+  color: var(--font-color);
+  background-color: var(--video-dark-grey);
+  border-color: var(--video-dark-grey);
+  min-width: 0;
+  width: fit-content;
+}
+
+.App.dark div.button.button-primary.btn-outline.reset-catg:hover,
+.App.light div.button.button-primary.btn-outline.reset-catg:hover {
+  background-color: var(--video-light-grey);
+}
+
+.mobile-filter-container {
+  margin-left: auto;
+  width: fit-content;
+}
+
+.mobile-filter-toggle {
+  border: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-filter-btns {
+  position: absolute;
+  z-index: 5;
+}
+
+.App.light .mobile-filter-btns {
+  background-color: var(--video-light-grey);
+}
+
+.App.dark .mobile-filter-btns {
+  background-color: var(--mobile-filter-bg);
+}
+
+.category-filter {
+  display: flex;
+  flex-direction: row;
+}
+
+.loader-container {
+  margin: auto;
+}
+
+.videos-loader {
+  width: 8rem;
+  height: auto;
+}
+
+@media screen and (min-width: 874px) {
+  .mobile-filter-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 874px) {
+  .category-filter {
+    display: none;
+  }
+}

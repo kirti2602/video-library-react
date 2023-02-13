@@ -1,0 +1,84 @@
+@import url("https://halcyon-ui.netlify.app/halcyon.css");
+
+@import url(./reset.css);
+@import url(./root.css);
+
+.App {
+  width: 100%;
+  background-color: var(--theme-dark-bg);
+  color: var(--theme-dark-font);
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  overflow: hidden auto;
+}
+
+.App.light {
+  background-color: var(--theme-light-bg);
+  color: var(--theme-light-font);
+}
+
+.App.dark {
+  background-color: var(--theme-dark-bg);
+  color: var(--theme-dark-font);
+}
+
+.video-main-content {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 200px 1fr;
+  margin: 6rem 0 8rem 0;
+}
+
+.flex-cards {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--video-cta-color);
+}
+
+button.button.reset-btn-hover:hover, a.button.reset-btn-hover:hover, .button.reset-btn-hover:hover {
+  transform: translate(0,0);
+  box-shadow: none;
+}
+
+@media screen and (max-width: 1000px) {
+  
+  .video-main-content {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 0px 1fr;
+    margin: 6rem 0 8rem 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .App {
+    min-height: 100vh;
+  }
+
+  .video-main-content {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 0px 1fr;
+    margin: 6rem 0 8rem 0;
+  }
+
+  #video-main {
+    width: 100%;
+  }
+
+  .flex-cards {
+    justify-content: center;
+    align-items: center;
+  }
+}

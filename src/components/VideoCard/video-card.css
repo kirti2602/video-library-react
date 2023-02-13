@@ -1,0 +1,115 @@
+.video-container .card.card-vertical .button.button-primary {
+  min-width: fit-content;
+  width: fit-content;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  color: var(--theme-light-font);
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.App.dark .video-container .card.card-vertical .button.button-primary {
+  color: var(--white-bg);
+}
+
+.video-container .card.card-vertical {
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.video-container .card.card-vertical .vt-card-text {
+  text-align: left;
+  margin: 0 1.5rem;
+}
+
+.App.dark .video-container .card.card-vertical {
+  background-color: var(--theme-dark-video-card);
+  color: var(--white-bg);
+}
+
+.video-container .card.card-vertical:hover {
+  box-shadow: none;
+}
+
+.video-container .card.card-vertical .img-badge-container:hover {
+  cursor: pointer;
+}
+
+.video-container .card.card-vertical .card-price {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.alert-container.alert-primary.txt-small.category-tag {
+  max-width: fit-content;
+  padding: 0.4rem;
+  opacity: 0.9;
+  border-radius: 0.2rem;
+  background-color: var(--video-secondary-color);
+  color: var(--white-bg);
+  margin: 0;
+}
+
+.video-container .card.card-vertical {
+  background-color: var(--white-bg);
+}
+
+.video-container .card.card-vertical .vt-card-img {
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+.card-brand-name {
+  font-weight: 300;
+}
+
+.video-card-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-card-head .avatar {
+  margin: 0;
+}
+
+.drop-down {
+  background-color: var(--video-secondary-light);
+  position: absolute;
+  top: 95%;
+  right: 0%;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  z-index: 8;
+  -webkit-box-shadow: 6px 10px 48px 10px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 6px 10px 48px 10px rgba(0, 0, 0, 0.65);
+  box-shadow: 6px 10px 48px 10px rgba(0, 0, 0, 0.65);
+}
+
+.drop-down button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
+.drop-down button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.close-dropdown {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

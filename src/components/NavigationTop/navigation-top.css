@@ -1,0 +1,246 @@
+#header {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.06);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  position: fixed;
+}
+
+.App.dark .store-nav-bar {
+  background-color: var(--theme-dark-nav-bg);
+}
+
+.App.light .store-nav-bar {
+  background-color: var(--theme-light-nav-bg);
+}
+
+.store-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--size-0-5) var(--size-2);
+  min-height: 5rem;
+}
+
+.store-logo {
+  max-width: 13rem;
+}
+
+.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
+}
+
+.store-nav ul li.search-bar {
+  width: 20rem;
+}
+
+.App.dark .store-nav-bar .store-nav .fas.fa-user {
+  color: var(--theme-dark-font);
+}
+
+.App.light .store-nav-bar .store-nav .fas.fa-user {
+  color: var(--theme-light-nav-font);
+}
+
+.store-nav-bar .store-nav .fas {
+  font-size: 1.2rem;
+}
+
+.store-nav .search-bar {
+  height: var(--size-2);
+  display: flex;
+  background: var(--search-bg);
+  border-radius: 0.2rem;
+  margin: 0 var(--size-3);
+  border: 1px solid var(--search-border);
+}
+
+.store-nav .search-bar input {
+  height: 100%;
+  width: 90%;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0 var(--size-1);
+  font-size: var(--size-1);
+  outline: none;
+}
+
+.store-nav .store-nav-links .search-bar .search-bar-icon {
+  height: 100%;
+  width: var(--size-2);
+  text-align: center;
+  line-height: var(--size-2);
+  border-left: 1px solid var(--search-border);
+}
+
+.store-nav .store-nav-links .search-bar .search-bar-icon span {
+  color: var(--gray-txt);
+}
+
+.App.dark .store-nav-bar .store-nav .store-nav-links li .button {
+  color: var(--theme-dark-font);
+}
+
+.App.light .store-nav-bar .store-nav .store-nav-links li .button {
+  color: var(--theme-light-nav-font);
+}
+
+.store-nav-bar .store-nav .store-nav-links li .button.theme-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.store-nav-bar .store-nav .store-nav-links li .button {
+  margin: var(--size-0-5);
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  transition: 0.4s ease;
+}
+
+.store-nav-bar .store-nav .store-nav-links li .btn {
+  color: var(--white-bg);
+}
+
+.App.light .store-nav-bar .store-nav .store-nav-links li .btn.btn-logout {
+  background-color: var(--video-secondary-light);
+  color: var(--logout-btn);
+  border: 1px solid var(--video-dark-grey);
+}
+
+.store-nav-bar .store-nav .store-nav-links li .btn.btn-logout {
+  background-color: var(--logout-btn);
+  border: none;
+  margin: 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.store-nav-bar .store-nav .store-nav-links li .btn.btn-logout:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.store-nav-bar .store-nav .store-nav-links li {
+  position: relative;
+}
+
+.store-nav-bar .store-nav .store-nav-links li .button.button-link:hover {
+  color: var(--video-cta-color);
+}
+
+.store-nav-bar .store-nav .store-nav-links li .badge .fas:hover {
+  color: var(--video-cta-color);
+  transition: 0.4s ease;
+}
+
+.button.button-primary.btn-solid.logout-btn {
+  width: 30%;
+  margin: auto;
+  background: var(--logout-btn);
+  border: var(--logout-btn);
+  padding: var(--size-1);
+}
+
+.store-nav-bar
+  .store-nav
+  .store-nav-links
+  .button.button-primary.btn-solid.logout-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.video-hamburger-btn {
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  position: absolute;
+  top: 50%;
+  border: none;
+  right: 2rem;
+  transform: translateY(-50%);
+  display: none;
+  background-color: transparent;
+}
+
+.App.dark .video-hamburger-btn {
+  color: var(--theme-dark-font);
+}
+
+.App.light .video-hamburger-btn {
+  color: var(--theme-light-font);
+}
+
+.store-nav ul.store-nav-links .sidebar-links {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .video-hamburger-btn {
+    display: block;
+  }
+
+  .store-nav ul.store-nav-links {
+    display: none;
+  }
+
+  .store-nav.hamburger-open ul.store-nav-links {
+    display: block;
+  }
+
+  .store-nav.hamburger-open ul.store-nav-links .sidebar-links {
+    display: block;
+  }
+
+  .App.light .store-nav-bar .store-nav .fas.fa-user {
+    color: var(--theme-light-font);
+  }
+
+  .App.dark .store-nav-links {
+    background-color: var(--theme-dark-hamburger-bg);
+  }
+
+  .App.light .store-nav-links {
+    background-color: var(--theme-light-hamburger-bg);
+    color: var(--theme-light-font);
+  }
+
+  .App.light .store-nav-bar .store-nav .store-nav-links li .button {
+    color: var(--theme-light-font);
+  }
+
+  .store-nav ul.store-nav-links {
+    position: absolute;
+    background-color: white;
+    border-left: 1px solid black;
+    top: 5.5rem;
+    right: 0;
+    flex-direction: column;
+    align-content: center;
+    padding: 2rem;
+    height: calc(100vh - 5.5rem);
+  }
+
+  .store-nav-bar .store-nav .store-nav-links li .button,
+  .store-nav-bar .store-nav .store-nav-links li .button i {
+    font-size: 1.6rem;
+  }
+
+  .store-nav ul.store-nav-links li {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .store-nav ul.store-nav-links li a {
+    width: 100%;
+  }
+
+  .navigation-menu li:hover {
+    background-color: var(--video-cta-color);
+  }
+}

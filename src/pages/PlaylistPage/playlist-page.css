@@ -1,0 +1,30 @@
+.create-new-playlist input {
+  padding: 10px;
+}
+
+.create-new-playlist button {
+  width: fit-content;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.create-new-playlist .button.btn-solid.button-primary {
+  background-color: var(--video-secondary-color);
+}
+
+.create-new-playlist .button.btn-solid.button-primary:hover {
+  background-color: var(--video-cta-color);
+  transition: 300ms ease;
+}
+
+.App.dark .create-new-playlist button.add-playlist-page {
+  color: var(--theme-dark-font);
+}
+
+@media screen and (max-width: 875px) {
+  .video-container .flex-cards {
+      justify-content: center;
+      align-items: center;
+  }
+}
